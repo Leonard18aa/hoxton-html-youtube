@@ -10,11 +10,8 @@ header{
     grid-auto-flow: column;
     grid-template: 
     'menu logo search_bar search_logo mic box settings sign_in sign_text'55px/
-    60px 320px 1fr 70px 210px 60px 30px 30px 75px;
-    /* gap: 5px; */
+    60px 300px 1fr 70px 210px 60px 30px 30px 75px;
     align-items: center;
-    /* position: fixed; */
-    /* position: relative; */
 }
 header a{
     text-decoration: none;
@@ -23,7 +20,6 @@ header a{
 
 header .menu{
     display: grid;
-    /* position: absolute; */
     text-align: center;
     font-size: 23px;
     padding-left: 10px;
@@ -34,6 +30,7 @@ header .logo{
     display: grid;
     text-align: start;
     padding-left: 10px;
+    padding-top: 6px;
 }
 
 header .search_bar{
@@ -68,7 +65,6 @@ header .search_logo{
 header .mic{
     display: grid;
     padding-left: 10px;
-    /* font-size: 30xp; */
 }
 
 header .mic a{
@@ -116,28 +112,65 @@ header .sign_text{
     color: blue;
 }
 
-main{
+/* main selector */
+
+.home{
     display: grid;
-    grid-template: 
-    'left_menu options options options'40px
-    'left_ menu videos videos videos' auto/
-    400px 1fr 1fr 1fr;
+    grid-template-columns: 226px ;
+    padding-top: 15px;
+    width: 226px;
+    height: 190px;
+    position: fixed;
 }
 
-main .left_menu{
-    display: grid;
-    grid-area: left_menu;
-    background-color: aqua;
+.home li{
+    display: flex;
+    align-items: center;
+    padding: 10px 25px;
+    border: 1px solid white;
+    width: 226px;
 }
 
-menu .options{
-    display: grid;
-    grid-area: options;
-    background-color: brown;
+.home a{
+    text-decoration: none;
+    color: rgb(15, 15, 15);
 }
 
-menu .videos{
-    display: grid;
-    grid-area: videos;
-    background-color: blue;
+.fixed{
+    background-color: rgba(184, 184, 184, 0.459) ;
+}
+
+.home li:hover{
+    background-color: rgba(202, 202, 202, 0.226);
+}
+
+li h2{
+    padding-left: 35px;
+}
+.home li i{
+    font-size: larger;
+}
+.home li h2{
+    font-size: 14px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.top_menu {
+    padding-left: 260px;
+}
+.top_menu ul li{
+    display: inline;
+    border: 1px solid grey;
+    border-radius: 15px;
+    background-color: rgba(221, 221, 221, 0.445);
+}
+
+.top_menu li a{
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    color: rgb(41, 41, 41);
+}
+.top_menu li:hover{
+    background-color: rgba(194, 194, 194, 0.432);
 }
